@@ -1,24 +1,45 @@
-.bold {
-    font-weight:bold
-}
-
+/* Apply styles to the navigation bar */
 .nav-bar {
-    background-color: grey;
-    padding: 20px;
+    background-color: #3498db;
+    padding: 10px;
     text-align: center;
 }
 
-
-.footer {
-    background-color: lightslategray;
-    padding: 20px;
-    text-align: center;
+.nav-bar a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
 }
 
+/* Apply styles to the content */
 .content {
-    background-color: lightsteelblue;
-    padding: 20px;
-    margin: 10px;
-    height: 600px;
+    margin: 20px;
+    text-align: center;
+}
 
+.content h1 {
+    color: #2ecc71;
+}
+
+.content p {
+    color: #333;
+}
+
+.bold {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Apply styles to the iframe */
+.content iframe {
+    margin-top: 20px;
+}
+
+/* Apply styles to the footer */
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 10px;
 }
