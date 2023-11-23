@@ -1,13 +1,13 @@
 /* Apply styles to the navigation bar */
 .nav-bar {
-    background-color: #3498db;
+    background-color: #e74c3c; /* Red color */
     padding: 10px;
     text-align: center;
 }
 
 .nav-bar a {
     text-decoration: none;
-    color: #fff;
+    color: #fff; /* White color */
     margin: 0 10px;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .content h1 {
-    color: #2ecc71;
+    color: #c0392b; /* Darker red color */
 }
 
 .content p {
@@ -27,7 +27,7 @@
 
 .bold {
     font-weight: bold;
-    color: #e74c3c;
+    color: #e74c3c; /* Red color */
 }
 
 /* Apply styles to the iframe */
@@ -39,7 +39,7 @@
 .footer {
     margin-top: 20px;
     text-align: center;
-    background-color: #34495e;
-    color: #ecf0f1;
+    background-color: #c0392b; /* Darker red color */
+    color: #ecf0f1; /* Light gray color */
     padding: 10px;
 }
