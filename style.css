@@ -67,3 +67,18 @@ footer {
 .card:hover {
     transform: scale(1.02);
 }
+
+/* Interactive elements */
+.btn-primary {
+    background-color: #3498db;  /* Blue color */
+    border-color: #3498db;  /* Blue color */
+}
+
+.btn-primary:hover {
+    background-color: #217dbb;  /* Darker blue color on hover */
+    border-color: #217dbb;  /* Darker blue color on hover */
+}
+
+.card-title {
+    color: #333;  /* Dark gray color for card title */
+}
