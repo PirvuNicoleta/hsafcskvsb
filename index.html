@@ -1,105 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>Pîrvu Nicoleta - Architect Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <title>Pîrvu Nicoleta | Architect Portfolio</title>
+    <style>
+    	*{
+        	font-family: 'Rubik', sans-serif !important;
+        }
+    	.carouselText{
+          color: white; 
+          font-size: 5rem;
+          text-shadow: 0 0 10px #000000, 0 0 10px #000000; 
+        }
+        
+        @keyframes glowingEffect {
+          0%{
+          	color: #fafa48;
+          }
+          50%{
+          	color: #a7f542;
+          }
+          100%{
+          	color: #fafa48;
+          }
+        }
+        
+        @keyframes glowingEffectButton {
+          0%{
+          	background-color: #fafa48;
+            border-color: #fafa48;
+          }
+          50%{
+            background-color: #a7f542;
+            border-color: #a7f542;
+          }
+          100%{
+            background-color: #fafa48;
+            border-color: #fafa48;
+          }
+        }
+        
+        .effectOnText{
+        	animation-name: glowingEffect;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+        }
+        
+        .effectOnButton{
+        	animation-name: glowingEffectButton;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+        }
+        
+      	.wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0 0 0 5rem;
+        }
+
+        li + li {
+            margin-top: 1rem;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: #fff9f0;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            width: calc(100% - 2rem);
+            box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
+            font-size: 20px;
+        }
+
+        li:nth-child(even) {
+            flex-direction: row-reverse;
+            background: #fffff0;
+            margin-right: -2rem;
+            margin-left: 2rem;
+        }
+
+        li:nth-child(even)::before {
+            transform: rotateY(180deg);
+        }
+    </style>
 </head>
+
 <body>
-    <header class="bg-dark text-white text-center py-5">
-        <h1>Pîrvu Nicoleta</h1>
-        <p class="lead">Architect</p>
+
+<!-- Header -->
+    <header>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        
+  		<div class="carousel-inner">
+    		<div class="carousel-item active">
+      			<img src="https://blog.novatr.com/hs-fs/hubfs/7_trends_in_landscape_architecture_5ba1bf1c5b328.png?width=814&height=421&name=7_trends_in_landscape_architecture_5ba1bf1c5b328.png" class="d-block w-100" alt="Inside Buidling Design" style="height: 900px; overflow: hidden; margin: 0 0 -40 0;">
+                
+    		</div>
+            
+    		<div class="carousel-item">
+      			<img src="https://worldlandscapearchitect.com/wp-content/uploads/2020/01/Thammasat-University-urban-rooftop-farm-LANDPROCESS-1-768x432.jpg" class="d-block w-100" alt="Outside Design" style="height: 900px; overflow: hidden; margin: 0 0 -40 0;">
+   			 </div>
+             
+    		<div class="carousel-item">
+      			<img src="https://cdn.crtkl.com/wp-content/uploads/sites/1/2018/08/landscape-architecture-bridge.jpg" class="d-block w-100" alt="Park Design" style="height: 900px; overflow: hidden; margin: 0 0 -40 0;">
+    		</div>
+            
+  		</div>
+        <div class="carousel-caption d-none d-md-block" style="bottom: 16.50rem;">
+          <p class="carouselText" style="font-size: 9rem;"><b>Pîrvu Nicoleta</b></p>
+          <p class="carouselText">Architecture is my  <span class="effectOnText">Passion</span>, <span class="effectOnText">Habit</span> and <span class="effectOnText">Dream</span></p>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+</div>
     </header>
 
-    <section id="education" class="container my-4">
-        <h2>Education</h2>
-        <p>Doctorate & License in Architecture, 2026 - 2032</p>
-    </section>
+    
+    
+<br><br><br><hr class="w3-opacity" style="margin: 0 200px 0 200px; color: black; opacity: 100000%"><br><br>
 
-    <section id="skills" class="container my-4">
-        <h2>Skills</h2>
+
+
+
+
+<!-- About Container -->
+	<h1 class="w3-text-black" style="text-align: center; font-size: 5rem; color: black">About</h1>
+    <ul>
+    <section id="education" class="container my-4">
+        <h2>Education:</h2>
+        <br>
         <ul>
-            <li>Project Management</li>
-            <li>Team Collaboration</li>
-            <li>Communication</li>
-            <li>AutoCAD</li>
-            <li>SketchUp</li>
-            <li>Creative Problem Solving</li>
-            <li>Budget Management</li>
+        	<li style="background: #fff0f0;">Doctorate & License in Architecture, 2026 - 2032</li>
         </ul>
     </section>
-
+    
+	<br>
+    
+    <section id="skills" class="container my-4">
+        <h2>Skills:</h2>
+        <br>
+        <ul>
+            <li>1. Project Management</li>
+            <li>2. Team Collaboration</li>
+            <li>3. Communication</li>
+            <li>4. AutoCAD</li>
+            <li>5. SketchUp</li>
+            <li>6. Creative Problem Solving</li>
+            <li>7. Budget Management</li>
+        </ul>
+    </section>
+	
+    <br>
+    
     <section id="professional-experience" class="container my-4">
-        <h2>Professional Experience</h2>
+        <h2>Professional Experience:</h2>
+        <br>
         <div class="experience">
-            <h3>Biroul de Arhitectură XYZ, Milano, Italia</h3>
-            <p>Professional Architect, 2040-present</p>
+        	<ul>
+              <li style="background: honeyDew">Biroul de Arhitectură, Milano, Italia - Working For:</li>
+              <li style="background: aliceBlue">Professional Architect, 2040-present</li>
+              <li style="background: honeyDew">Biroul de Arhitectură, Roma, Italia - Working For:</li>
+              <li style="background: aliceBlue">Architect, 2032-2040</li>
+        	</ul>
         </div>
-        <div class="experience">
-            <h3>Biroul de Arhitectură ABC, Roma, Italia</h3>
-            <p>Architect, 2032-2040</p>
-        </div>
     </section>
-
-    <section id="profile" class="container my-4">
-        <h2>Profile</h2>
-        <p>Architecture is art, transforming ideas and visions into reality...</p>
+    
+    <br>
+    
+    <section id="languages" class="container my-4">      
+    <h2>Languages:</h2>
+    <br>
+        <ul>
+          <li style="background: #f1f0ff">English, Italian - Professional (C2)</li>
+          <li style="background: #f8f0ff">German, French - Advanced (C1)</li>
+          
+          <li style="background: #f1f0ff">Turkish, Russian - Intermediate (B1)</li>
+       	</ul>
     </section>
+    
+    
+    
+    
+    
+    <br><br><br><hr class="w3-opacity" style="margin: 0 200px 0 200px; color: black; opacity: 100000%"><br><br>
+    
+    
+    
+    
+    
+    
+<!-- Projects Containter -->
 
-    <section id="contact" class="container my-4">
-        <h2>Contact</h2>
-        <p>060850505, 123 Milan, Italy</p>
-        <p>Email: pirvunicoleta8@gmail.com</p>
-    </section>
-
-    <section id="languages" class="container my-4">
-        <h2>Languages</h2>
-        <p>English, Italian - Professional (C2)</p>
-        <p>German, French - Advanced (C1)</p>
-        <p>Turkish, Russian - Intermediate (B1)</p>
-    </section>
-
-    <section id="projects" class="container my-4">
-        <h2>Projects</h2>
+        <section id="projects" class="container my-4">
+        <h1 class="w3-text-black" style="text-align: center; font-size: 5rem; color: black">Projects</h1>
+        <br>
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="project1.jpg" class="card-img-top" alt="https://img.freepik.com/premium-photo/architecture-project-showing-different-design-phases-from-handmade-rough-sketch-construction-specifications-realistic-3d-rendering-writing-is-dummy-text_190619-1505.jpg?w=2000. ">
+                    <img src="https://media.licdn.com/dms/image/D4D12AQHV-BxE28qLAA/article-cover_image-shrink_600_2000/0/1691157261055?e=2147483647&v=beta&t=ftEcB866KTP3I-OHfiDoEY6YRuDOlamNwtF6wyt4OCQ" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Imaginary Project 1</h5>
                         <p class="card-text">Collaborated on a modern and sustainable residential complex...</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <a href="#" class="btn btn-primary effectOnButton" style="color: black">Learn More</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="project2.jpg" class="card-img-top" alt="Project 2 Image">
+                    <img src="https://img.freepik.com/premium-photo/architecture-project-showing-different-design-phases-from-handmade-rough-sketch-construction-specifications-realistic-3d-rendering-writing-is-dummy-text_190619-1505.jpg?w=2000" alt="Project 2 Image">
                     <div class="card-body">
                         <h5 class="card-title">Imaginary Project 2</h5>
                         <p class="card-text">Led the renovation of a historic cultural center, preserving its architectural heritage...</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <a href="#" class="btn btn-primary effectOnButton" style="color: black">Learn More</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="project3.jpg" class="card-img-top" alt="Project 3 Image">
+                    <img src="https://mlcynqtblhhi.i.optimole.com/w:auto/h:auto/q:mauto/ig:avif/f:best/https://aplosgroup.com/wp-content/uploads/2022/09/architect_drawing.jpeg" class="card-img-top" alt="Project 3 Image">
                     <div class="card-body">
                         <h5 class="card-title">Imaginary Project 3</h5>
                         <p class="card-text">Designed and executed an urban park project aimed at enhancing public spaces within the city...</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <a href="#" class="btn btn-primary effectOnButton" style="color: black">Learn More</a>
                     </div>
                 </div>
             </div>
-            <!-- Add more project cards as needed -->
         </div>
     </section>
+    
+    
+    
+        <br><br><br><hr class="w3-opacity" style="margin: 0 200px 0 200px; color: black; opacity: 100000%"><br><br>
+    
+    
+    
+    
+<!-- Contact: -->
+<h1 class="w3-text-black" style="text-align: center; font-size: 5rem; color: black">Contact</h1>
+<br>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2023 Pîrvu Nicoleta - Architect</p>
+    <section id="contact" class="container my-4">
+    <p class="w3-text-black" style="text-align: center; font-size: 2rem; color: black">060850505, 123 Milan, Italy</p>
+    <p class="w3-text-black" style="text-align: center; font-size: 2rem; color: black">Email: pirvunicoleta8@gmail.com</p>
+    </section>
+
+
+
+
+
+
+<br><br><br><hr class="w3-opacity" style="margin: 0 200px 0 200px; color: black; opacity: 100000%"><br><br>
+    
+    
+    
+    
+    
+<!-- Footer -->
+    <footer class="text-black text-center py-3">
+        <p>2023 © Pîrvu Nicoleta | Architect</p>
     </footer>
-
-    <!-- Bootstrap JS and Pop
+    
+<!-- JavaScript -->
+    	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
